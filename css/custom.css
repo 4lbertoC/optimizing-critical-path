@@ -1,0 +1,29 @@
+.slide-background[data-background-hash*=snail] {
+	background-size: 30%;
+	background-position: 70% 80%;
+}
+
+.slide-background[data-background-hash*=hourglass] {
+	background-size: 10%;
+	background-position: 10% 40%;
+}
+
+.fragment.enemy-option {
+	padding: 5px;
+	-webkit-box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.75);
+	box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.75);
+	border-radius: 2px;
+}
+
+thead {
+	background: #CFD8DC;
+}
+
+.mytable td {
+	border: 1px solid black !important;
+}
+
+.mytable thead {
+	font-weight: bold;
+}
