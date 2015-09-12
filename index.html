@@ -240,6 +240,24 @@
 						</aside>
 					</section>
 					<section>
+						<img src="img/but.png" alt="BUT" style="border: none;" />
+						<div style="position: absolute; width: 25%; font-size: 0.6em; top: 8%; left: 16%; text-transform: uppercase; text-align: left;">Javascript can read and change the DOM and CSSOM</div>
+						<div class="fragment" data-fragment-index="1" style="position: absolute; width: 25%; font-size: 0.6em; top: 29%; left: 21%; text-transform: uppercase; text-align: left;">Yes, but...</div>
+						<div class="fragment fade-out" data-fragment-index="2" style="position: absolute; width: 37%; height: 43%; top: 6%; left: 48.5%; background: white;"></div>
+						<div class="fragment" data-fragment-index="2" style="position: absolute; width: 25%; font-size: 0.6em; top: 33%; left: 51%; text-transform: uppercase; text-align: left;">...Javascript execution blocks DOM rendering.</div>
+						<div class="fragment fade-out" data-fragment-index="3" style="position: absolute; width: 37%; height: 44%; top: 49%; left: 13.5%; background: white;"></div>
+						<div class="fragment" data-fragment-index="3" style="position: absolute; width: 21%; font-size: 0.6em; top: 65%; left: 16%; text-transform: uppercase; text-align: left;">And Javascript won't execute until the CSSOM is ready.</div>
+						<div class="fragment fade-out" data-fragment-index="4" style="position: absolute; width: 37%; height: 44%; top: 49.2%; left: 49.3%; background: white;"></div>
+					</section>
+					<section>
+						<h3>How can we optimise the critical JS?</h3>
+						<ul class="fragment">
+							<li class="fragment">Place script tags in the right position</li>
+							<li class="fragment">Use async scripts if possible</li>
+							<li class="fragment">Defer non-essential and long running code</li>
+						</ul>
+					</section>
+					<section>
 						<h3>Resources</h3>
 						<p>
 							<ul>
