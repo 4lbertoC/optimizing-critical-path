@@ -83,10 +83,18 @@
 						<small><a href="http://www.tomshw.it/news/4g-lte-italiana-al-top-in-europa-ma-non-la-usa-quasi-nessuno-67876">http://www.tomshw.it/news/4g-lte-italiana-al-top-in-europa-ma-non-la-usa-quasi-nessuno-67876</a></small>
 					</section>
 					<section>
-						<iframe src="//giphy.com/embed/FR3IRCWC9faRG" width="800" height="600" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/goodbye-dolphin-i-dont-care-FR3IRCWC9faRG">via GIPHY</a></p>
+						<img src="img/2g-in-india.png" alt="2G in India">
+						<small><a href="https://paul.kinlan.me/the-web-in-india-anecdote-3">https://paul.kinlan.me/the-web-in-india-anecdote-3</a></small>
 					</section>
 					<section>
 						<h3>Is it worth caring about performance?</h3>
+						<img src="img/dolphin-lol.gif" alt="Dolphin Lol" style="width: 90%"/>
+						<aside class="notes">
+							http://gph.is/XJ7cl9
+						</aside>
+					</section>
+					<section>
+						<h3>Yes it is!</h3>
 						<blockquote class="fragment" style="text-align: right;">
 							Every <b>100ms</b> delay costs Amazon <b>1%</b> of sales<br/>
 							<small>
@@ -152,7 +160,7 @@
 						</p>
 					</section>
 					<section>
-						<h2>RAIL Metrics</h2>
+						<h3>RAIL Metrics</h3>
 						<p>
 							<ul>
 								<li class="fragment">Response: 100ms</li>
@@ -165,6 +173,25 @@
 					<section>
 						<h3>Progressive Rendering</h3>
 						<img src="img/progressive-rendering.png" alt="progressive rendering" />
+					</section>
+					<section>
+						<h3>Critical Rendering Path</h3>
+						<blockquote>All that happens in the browser before the page is displayed</blockquote>
+					</section>
+					<section>
+						<h3>Example</h3>
+						<pre><code>&lt;html&gt;
+	&lt;head&gt;
+		&lt;link rel="stylesheet" href="style.css"&gt;
+		&lt;title&gt;Example&lt;/title&gt;
+	&lt;head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;Hello world!&lt;/h1&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+						<aside class="notes">
+							Show requests in network panel and first paint event in timeline of demo-site2
+						</aside>
 					</section>
 					<section>
 						<h3>From HTML to DOM</h3>
@@ -185,6 +212,34 @@
 						</p>
 					</section>
 					<section>
+						<h3>HTML and CSS are <b>render blocking</b></h3>
+						<p>
+							<div class="fragment">No HTML -> No DOM</div>
+							<div class="fragment">No CSS -> No CSSOM</div>
+							<div class="fragment">No DOM &amp; No CSSOM -> No Render Tree</div>
+							<div class="fragment">No Render Tree -> Nothing is rendered!</div>
+						</p>
+					</section>
+					<section>
+						<h3>How can we optimise the critical CSS?</h3>
+						<ul>
+							<li class="fragment">Specify the CSS dependencies as early as possible</li>
+							<li class="fragment">Avoid @imports</li>
+							<li class="fragment">Inline the critical CSS</li>
+							<li class="fragment">Use media types and queries to mark CSS as non-blocking</li>
+						</ul>
+					</section>
+					<section>
+						<h3>HTML, CSS... guess who is missing</h3>
+						<p>
+							<img src="img/shining-knock.gif" alt="Knock knock" style="width: 70%">
+							<img src="img/js.jpg" alt="JS" class="shiny-js-logo">
+						</p>
+						<aside class="notes">
+							http://gph.is/XNfEQc
+						</aside>
+					</section>
+					<section>
 						<h3>Resources</h3>
 						<p>
 							<ul>
@@ -203,6 +258,7 @@
 						<h2>Thanks!</h2>
 						<a href="http://forgifs.com" target="_blank"><img src="http://forgifs.com/gallery/d/134072-4/Rocketsnail.gif?" alt="forgifs.com" style="width: 50%;"/></a>
 					</section>
+					<template>
 					<section>
 						<h1>Reveal.js</h1>
 						<h3>The HTML Presentation Framework</h3>
@@ -504,6 +560,7 @@
 		- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
 	</p>
 </section>
+</template>
 </div>
 </div>
 <script src="lib/js/head.min.js"></script>

@@ -27,3 +27,13 @@ thead {
 .mytable thead {
 	font-weight: bold;
 }
+
+.shiny-js-logo {
+    position: absolute;
+    width: 8%;
+    border: none;
+    top: 74%;
+    left: 62%;
+    opacity: 0.8;
+    transform: rotateZ(5deg);
+}
