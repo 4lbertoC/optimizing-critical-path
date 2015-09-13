@@ -190,7 +190,7 @@
 	&lt;/body&gt;
 &lt;/html&gt;</code></pre>
 						<aside class="notes">
-							Show requests in network panel and first paint event in timeline of demo-site2
+							Show requests in network panel and first paint event in timeline of demo-site-css
 						</aside>
 					</section>
 					<section>
@@ -228,6 +228,12 @@
 							<li class="fragment">Inline the critical CSS</li>
 							<li class="fragment">Use media types and queries to mark CSS as non-blocking</li>
 						</ul>
+						<aside class="notes">
+							Use GPRS.
+							demo-site-css again, move the critical CSS as inline and leave the media query in the external file.
+							Use the media type print for the file.
+							Show the first paint time
+						</aside>
 					</section>
 					<section>
 						<h3>HTML, CSS... guess who is missing</h3>
@@ -256,6 +262,12 @@
 							<li class="fragment">Use async scripts if possible</li>
 							<li class="fragment">Defer non-essential and long running code</li>
 						</ul>
+						<aside class="notes">
+							Use Good 3G.
+							In demo-site-js show that if we move the files at the bottom we get a minimal improvement.
+							Show that if we mark as async app.js and the 2 additional components it will further improve.
+							Show that with custom minimal css and libraries it improves even more.
+						</aside>
 					</section>
 					<section>
 						<h3>Resources</h3>
