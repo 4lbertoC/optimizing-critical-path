@@ -37,3 +37,60 @@ thead {
     opacity: 0.8;
     transform: rotateZ(5deg);
 }
+
+.signal {
+	display: inline-block;
+	margin: 3% !important;
+	background-color: black;
+	border: 3px solid black !important;
+	border-radius: 10px;
+	width: 5%;
+}
+
+.signal.visible {
+	visibility: visible !important;
+	opacity: 1 !important;
+	background-color: transparent;
+}
+
+.phone {
+	border: 5px solid black !important;
+	border-radius: 10px;
+	width: 350px;
+	height: 550px;
+	display: inline-block;
+}
+
+.phone-header {
+    height: 50px;
+    background: white;
+    border: 10px solid #eee !important;
+}
+
+.phone-contents {
+	height: 470px;
+    border: 10px solid #eee !important;
+   	border-top: 0 !important;
+}
+
+.phone-font {
+	font-family: Helvetica;
+}
+
+.phone-image img, .phone-video img {
+	width: 200px;
+	border: 0 !important;
+	box-shadow: none !important;
+}
+
+.phone-background {
+	width: 330px;
+	height: 470px;
+	position: absolute;
+    border: 10px solid #eee !important;
+   	border-top: 0 !important;
+}
+
+.phone-background.visible {
+	background-color: red !important;
+}

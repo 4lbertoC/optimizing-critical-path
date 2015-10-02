@@ -26,6 +26,7 @@
 		<![endif]-->
 	</head>
 	<body>
+		<img src="img/GDG-Milano-logo.png" alt="" style="position: fixed; top: 10px; left: 10px; width: 300px;">
 		<div class="reveal">
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
@@ -37,6 +38,39 @@
 				</section>
 				<section>
 					<img src="img/me.jpg" style="width: 80%;"/>
+				</section>
+				<section>
+					<div class="signal" style="height: 50px"></div>
+					<div class="signal fragment fade-out" style="height: 100px" data-fragment-index="4"></div>
+					<div class="signal fragment fade-out" style="height: 175px" data-fragment-index="3"></div>
+					<div class="signal fragment fade-out" style="height: 275px;" data-fragment-index="2"></div>
+					<div class="signal fragment fade-out" style="height: 400px;" data-fragment-index="1"></div>
+				</section>
+				<section>
+					<img src="img/chiavetta.jpg" alt="chiavetta" style="width: 80%;">
+				</section>
+				<section>
+					<img src="img/waiting.gif" alt="waiting" style="width: 80%;">
+					<aside class="notes">
+						http://gph.is/145K8KA
+					</aside>
+				</section>
+				<section>
+					<div style="text-align: center;">
+						<div class="phone">
+							<div class="phone-header"></div>
+							<div class="phone-background fragment" data-fragment-index="4"></div>
+							<div class="phone-contents" style="position: relative;">
+								<div class="phone-font fragment" data-fragment-index="1">Hello world!</div>
+								<div class="phone-image fragment" data-fragment-index="2">
+									<img src="img/snail.jpg" alt="" style="float: left; clear: both;">
+								</div>
+								<div class="phone-video fragment" data-fragment-index="3">
+									<img src="img/waiting.gif" alt="" style="width: 250px; float: right; clear: both;">
+								</div>
+							</div>
+						</div>
+					</div>
 				</section>
 				<section data-background="img/hourglass.png">
 					<h3>Page load time's worst enemies (average)</h3>
@@ -156,18 +190,12 @@
 						<h3>RAIL Performance Model</h3>
 						<img src="img/rail.png" style="border: 0; box-shadow: none;" />
 						<p>
+							<div style="position: absolute; top: 71%; left: 9%;" class="fragment">100ms</div>
+							<div style="position: absolute; top: 71%; left: 34%;" class="fragment">16ms</div>
+							<div style="position: absolute; top: 71%; left: 55%;" class="fragment">max! <br><small>(50ms chunks)</small></div>
+							<div style="position: absolute; top: 71%; left: 78%;" class="fragment">1000ms</div>
+							<br>
 							<small><a href="https://developers.google.com/web/tools/profile-performance/evaluate-performance/rail">https://developers.google.com/web/tools/profile-performance/evaluate-performance/rail</a></small>
-						</p>
-					</section>
-					<section>
-						<h3>RAIL Metrics</h3>
-						<p>
-							<ul>
-								<li class="fragment">Response: 100ms</li>
-								<li class="fragment">Animation: 16ms</li>
-								<li class="fragment">Idle: max! (main thread JS work divided into 50ms chunks)</li>
-								<li class="fragment">Load: 1000ms</li>
-							</ul>
 						</p>
 					</section>
 					<section>
